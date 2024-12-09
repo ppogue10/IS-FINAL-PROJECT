@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://via.placeholder.com/1200x800'); /* Placeholder background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+   
+   
+
+
+}
+header h1 {
+    margin: 0;
+}
+header a {
+    color: #333;
+    text-decoration: none;
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ol ul, ul ol {
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav a:hover {
+    color: #007BFF;
+}
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-image: url('../assets/img/iceland.jpg'); /* Adjust the extension if it's not .jpg */
+    background-size: cover;
+    background-position: center 20%;
+    color: rgb(0, 0, 0); /* Ensures text is readable over the background */
+    font-weight: bold;
+}
+
+
+
