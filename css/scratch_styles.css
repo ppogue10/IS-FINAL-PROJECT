@@ -1,170 +1,177 @@
 /* Global Styles */
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif; /* Funky font */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
     margin: 0;
     padding: 0;
-    background-color: #bdc9ff; /* Bright yellow background */
-    color: #1e1f26; /* Dark text for contrast */
+    background-color: #f9f9f9; /* Neutral background for a modern look */
+    color: #333; /* Dark text for good contrast */
 }
 
 /* Navigation */
-/* Default Menu Styles */
 nav {
     display: flex;
-    flex-wrap: wrap; /* Allows menu items to wrap onto the next line if needed */
-    justify-content: center; /* Centers the items horizontally */
-    gap: 10px; /* Adds space between buttons */
-    background-color: #ff6f61; /* Background color for the menu */
-    padding: 15px; /* Padding around the menu items */
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    justify-content: center; /* Centers items */
+    gap: 15px; /* Adds space between items */
+    background-color: #005f73; /* Calm blue */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav a {
-    padding: 10px 20px; /* Space inside each button */
-    text-decoration: none; /* Removes underline from links */
-    color: #fff; /* Button text color */
-    background-color: #000; /* Button background color */
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Smooth hover effect */
-    white-space: nowrap; /* Prevents button text from wrapping */
-    flex: 1 1 auto; /* Ensures buttons take up equal space */
-    max-width: 200px; /* Prevents buttons from growing too large */
-    text-align: center; /* Centers text inside buttons */
+    padding: 10px 20px;
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* White text for contrast */
+    background-color: #0a9396; /* Muted teal */
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    white-space: nowrap; /* Prevents text from breaking */
 }
 
 nav a:hover {
-    background-color: #fff; /* Hover background color */
-    color: #ff6f61; /* Hover text color */
+    background-color: #94d2bd; /* Lighter teal for hover */
+    transform: translateY(-2px); /* Subtle hover effect */
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; /* Stacks the menu items vertically */
-        align-items: center; /* Centers the items */
-    }
-    nav a {
-        flex: none; /* Prevents items from stretching in vertical layout */
-        width: 80%; /* Buttons take up 80% of the screen width */
-    }
-}
-
 
 /* Header */
 header {
     text-align: center;
-    background-image: url('assets/img/header-background.jpg');
+    background-image: url('assets/img/header-background.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 20px;
-    color: #000000; /* Matches the body background for a funky vibe */
-    text-shadow: 3px 3px #ff6f61;
-    border-bottom: 10px solid #000;
-    box-shadow: inset 0 -10px 15px rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    color: #0a9396;
+
+    border-bottom: 4px solid #0a9396;
 }
 
-/* Header Text */
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    transform: rotate(-5deg);
 }
+
 header p {
-    font-size: 1.5em;
-    font-style: italic;
+    font-size: 1.2em;
 }
 
 /* Content Section */
 .content {
     padding: 20px;
-    background-color: #e27be9; /* Deep purple */
-    border-radius: 25px;
-    margin: 20px auto;
-    max-width: 80%;
-    color: #000000;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-    transform: skewY(-2deg);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Destinations Section */
-#destinations {
-    margin-bottom: 20px;
-    transform: rotate(2deg);
-}
-#destinations ol ul {
-    margin-left: 20px;
-    list-style-type: disc;
-}
-#destinations li {
-    margin-bottom: 10px;
-    color: #000000; /* Bright yellow */
-    font-size: 1.2em;
-
-}
-
-/* Image Gallery */
+/* Rotating Image Gallery */
 .image-gallery {
     display: flex;
-    gap: 15px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 .image-gallery img {
     width: 200px;
     height: 150px;
     object-fit: cover;
-    border: 5px dotted #ff6f61;
-    border-radius: 50%;
-    transform: rotate(-15deg);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
 .image-gallery img:hover {
-    transform: rotate(15deg) scale(1.1);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    transform: rotate(10deg) scale(1.05); /* Slight rotation and scaling */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Larger shadow */
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2em;
+    color: #005f73;
+    border-bottom: 2px solid #0a9396;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 /* Video Section */
 #video iframe {
     display: block;
     margin: 0 auto;
-    border: 10px solid #45a5f3;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Tableau Section */
-#tableau iframe {
-    display: block;
-    margin: 20px auto;
-    border: 5px dashed #6a0572;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds some depth */
 }
 
 /* Footer */
 footer {
-    background-color: #96ec8e;
-    color: #d99add;
+    background-color: #005f73;
+    color: #fff;
     text-align: center;
     padding: 15px 0;
-    font-size: 1.2em;
-    font-weight: bold;
-    letter-spacing: 2px;
-  
+    font-size: 0.9em;
 }
+
 footer a {
-    color: #e83bf5;
+    color: #94d2bd;
     text-decoration: none;
-    background-color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
+
 footer a:hover {
-    color: #000000;
-    background-color: #e83bf5;
-    transform: scale(1.2);
+    color: #fff;
+}
+/* Ordered List Styles */
+ol {
+    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    font-size: 1.1em; /* Slightly larger text for readability */
+    color: #333; /* Neutral text color */
+    padding-left: 20px; /* Indentation */
+    line-height: 1.8; /* Improves readability and spacing */
 }
 
+ol ul {
+    font-family: 'Open Sans', sans-serif; /* Matches the main design for professionalism */
+    font-size: 1em; /* Slightly smaller than parent list for hierarchy */
+    color: #005f73; /* Calm blue for differentiation */
+    padding-left: 20px; /* Further indentation */
+}
 
+/* Unordered List Styles */
+ul {
+    font-family: 'Roboto', sans-serif; /* Matches the ordered list for consistency */
+    list-style-type: square; /* Uses square bullets */
+    font-size: 1em; /* Clean size for readability */
+    color: #333; /* Neutral text color */
+    padding-left: 20px; /* Indentation */
+}
 
+ul li {
+    margin-bottom: 8px; /* Adds subtle space between items */
+    line-height: 1.6; /* Improves readability */
+}
+/* Back to Professional Pages Button */
+.back-button {
+    display: inline-block;
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* White text color */
+    background-color: #005f73; /* Deep blue background */
+    padding: 10px 20px; /* Padding for button-like appearance */
+    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    font-size: 1em; /* Readable font size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center; /* Centers text */
+}
+
+.back-button:hover {
+    background-color: #0a9396; /* Brighter teal on hover */
+    transform: scale(1.1); /* Slightly enlarges the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increases shadow depth on hover */
+}
+
+footer {
+    text-align: center; /* Centers all footer content */
+    padding: 20px; /* Adds space around the footer */
+    background-color: #f9f9f9; /* Light gray background */
+    border-top: 2px solid #ddd; /* Subtle border for separation */
+}
